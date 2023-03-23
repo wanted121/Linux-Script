@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "------------------Memory Menagement-------------------"
+total_mem=$`free -h | grep ^Mem | awk '{print $2}'`
+uses_mem=$`free -h | grep ^Mem | awk '{print $3}'`
+echo "\nTotal Memory :  $total_mem \nTotal Memory Uses : $uses_mem"
+
+echo "--------------Memory Uses Pppercentage-----------------" 
